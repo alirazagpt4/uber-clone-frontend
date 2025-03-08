@@ -109,7 +109,12 @@ const Home = () => {
           </div>}
       </div>
 
-      <div ref={vehiclePanelRef} className='fixed w-full  z-10 bg-white bottom-0 translate-y-full  px-3 py-6'>
+      <div ref={vehiclePanelRef} className='fixed w-full  z-10 bg-white bottom-0 translate-y-full  px-3 py-10'>
+         <h5 onClick={
+          ()=>{
+            setVehiclePanel(false);
+          }
+         } className='p-1 text-center w-[93%] absolute top-0 '><i className="text-3xl text-gray-300  ri-arrow-down-wide-fill"></i></h5>
          <h3 className='text-2xl font-semibold mb-5'>Choose a Vehicle</h3>
           <div className='flex flex-row  items-center  mb-2 justify-between p-3 border-1 border-gray-300 active:border-1 active:border-black rounded-xl  '>
           <img className='h-12' src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,h_552,w_552/v1555367310/assets/30/51e602-10bb-4e65-b122-e394d80a9c47/original/Final_UberX.png" alt="car img" />
