@@ -12,6 +12,8 @@ import UserProtectedWrapper from './pages/UserProtectedWrapper'
 import UserLogout from './pages/UserLogout'
 import CaptainHome from './pages/CaptainHome'
 import CaptainProtectedWrapper from './pages/CaptainProtectedWrapper'
+import Riding from './pages/Riding'
+import CaptainRiding from './pages/CaptainRiding'
 const App = () => {
   
   return (
@@ -37,6 +39,9 @@ const App = () => {
             <UserLogout/>
           </UserProtectedWrapper>
         } />
+        
+        <Route path="/riding" element={<Riding/>} />
+        <Route path="/captain-riding" element={<CaptainRiding/>} />
         <Route path="*" element={'404 NOT FOUND'} />
        
       </Routes>
